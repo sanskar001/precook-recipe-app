@@ -1,5 +1,5 @@
 // Password validation length (greater than and equal to 6)
-const REACT_APP_MIN_PASSWORD_LENGTH = "5";
+const REACT_APP_MIN_PASSWORD_LENGTH = "6";
 
 // Spoonacular api key (sanskarm2000)
 // REACT_APP_API_KEY = "32b5a81dd99446bc853c642b8e451d1c";
