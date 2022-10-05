@@ -1,0 +1,11 @@
+.home {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}

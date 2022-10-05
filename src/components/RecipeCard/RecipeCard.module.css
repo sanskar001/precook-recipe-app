@@ -1,0 +1,133 @@
+.recipe_card {
+  width: 100%;
+  min-width: 300px;
+  max-width: 340px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  position: relative;
+  transition: box-shadow 0.4s ease;
+}
+
+.recipe_card:hover,
+.recipe_card:active {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.recipe_card .link {
+  border-radius: inherit;
+}
+
+.bookmark_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  background-color: transparent;
+  z-index: 20;
+}
+
+.bookmark_btn svg {
+  color: #e8e8e8;
+}
+
+.bookmark_btn .filled_icon {
+  color: var(--secondary-color);
+}
+
+.recipe_img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 10;
+  border-radius: inherit;
+}
+
+.recipe_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+  transition: all 0.4s ease;
+}
+
+.recipe_img:hover > img {
+  transform: scale(1.1);
+}
+
+.recipe_info {
+  width: 100%;
+}
+
+.info_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 5px;
+}
+
+.title {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1c1c1c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.like_btn {
+  width: 45px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.category {
+  flex: 1;
+  font-size: 14px;
+  color: #353535;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.ready_in_mins {
+  font-size: 14px;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

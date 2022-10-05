@@ -1,0 +1,162 @@
+.bookmark_btn {
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Bookmark button styling */
+
+.content {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 20px 0px;
+}
+
+.content svg {
+  color: var(--secondary-color);
+}
+
+.content p {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+  color: var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.bump {
+  transform: scale(1);
+  transition: transform 0.4s ease;
+  animation: bump 0.4s 2 ease-in-out alternate;
+}
+
+@keyframes bump {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* Bookmark dropdown container styling */
+
+.dropdown_container {
+  position: absolute;
+  width: 300px;
+  max-height: 400px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transform: translate(-50%, 10px);
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.illustration_img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.dropdown_container h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.bookmark_btn2 {
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #353535;
+  border-radius: 5px;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.bookmark_btn2:hover,
+.bookmark_btn2:active {
+  background-color: #1c1c1c;
+}
+
+.bookmark_list {
+  width: 100%;
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.bookmark_item {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  border-radius: 5px;
+  transition: background-color 0.4s ease;
+}
+
+.bookmark_item:hover,
+.bookmark_item:active {
+  background-color: #e8e8e8;
+}
+
+.food_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.info {
+  text-align: left;
+}
+
+.info p:first-child {
+  width: 210px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info p:last-child {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  color: #353535;
+}
+
+.bookmark_btn:hover .dropdown_container {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,158 @@
+{
+  "inspiration": [
+    {
+      "id": 0,
+      "image": "pizza.jpg",
+      "title": "pizza"
+    },
+    {
+      "id": 1,
+      "image": "sandwich.jpg",
+      "title": "sandwich"
+    },
+    {
+      "id": 2,
+      "image": "burger.jpg",
+      "title": "burger"
+    },
+    {
+      "id": 3,
+      "image": "chicken.jpg",
+      "title": "chicken"
+    },
+    {
+      "id": 4,
+      "image": "dal.jpg",
+      "title": "dal"
+    },
+    {
+      "id": 5,
+      "image": "rolls.jpg",
+      "title": "rolls"
+    },
+    {
+      "id": 6,
+      "image": "cake.jpg",
+      "title": "cake"
+    },
+    {
+      "id": 7,
+      "image": "fries.jpg",
+      "title": "fries"
+    },
+    {
+      "id": 8,
+      "image": "tea.jpg",
+      "title": "tea"
+    },
+    {
+      "id": 9,
+      "image": "pasta.jpg",
+      "title": "pasta"
+    }
+  ],
+  "cuisine": [
+    {
+      "id": 0,
+      "image": "american.jpg",
+      "title": "american"
+    },
+    {
+      "id": 1,
+      "image": "chinese.jpg",
+      "title": "chinese"
+    },
+    {
+      "id": 2,
+      "image": "indian.jpg",
+      "title": "indian"
+    },
+    {
+      "id": 3,
+      "image": "thai.jpg",
+      "title": "thai"
+    },
+    {
+      "id": 4,
+      "image": "japanese.jpg",
+      "title": "japanese"
+    },
+    {
+      "id": 5,
+      "image": "italian.jpg",
+      "title": "italian"
+    },
+    {
+      "id": 6,
+      "image": "european.jpg",
+      "title": "european"
+    },
+    {
+      "id": 7,
+      "image": "mexican.jpg",
+      "title": "mexican"
+    },
+    {
+      "id": 8,
+      "image": "french.jpg",
+      "title": "french"
+    },
+    {
+      "id": 9,
+      "image": "middle_eastern.jpg",
+      "title": "middle eastern"
+    }
+  ],
+  "mealsType": [
+    {
+      "id": 0,
+      "image": "main_course.jpg",
+      "title": "main course"
+    },
+    {
+      "id": 1,
+      "image": "dessert.jpg",
+      "title": "dessert"
+    },
+    {
+      "id": 2,
+      "image": "soup.jpg",
+      "title": "soup"
+    },
+    {
+      "id": 3,
+      "image": "drink.jpg",
+      "title": "drink"
+    },
+    {
+      "id": 4,
+      "image": "breakfast.jpg",
+      "title": "breakfast"
+    },
+    {
+      "id": 5,
+      "image": "snacks.jpg",
+      "title": "snacks"
+    },
+    {
+      "id": 6,
+      "image": "appetizer.jpg",
+      "title": "appetizer"
+    },
+    {
+      "id": 7,
+      "image": "beverage.jpg",
+      "title": "beverage"
+    },
+    {
+      "id": 8,
+      "image": "salad.jpg",
+      "title": "salad"
+    },
+    {
+      "id": 9,
+      "image": "side_dish.jpg",
+      "title": "side dish"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+.main_header {
+  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.right {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.search {
+  width: 70%;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 600px) {
+  .right {
+    width: auto;
+  }
+}

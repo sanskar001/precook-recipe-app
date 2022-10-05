@@ -1,0 +1,102 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(28, 28, 28, 0.85);
+  filter: blur(4px);
+  z-index: 10;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 450px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+  z-index: 20;
+}
+
+/* Modal Header styling */
+
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.modal header h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #353535;
+}
+
+.close_btn {
+  background-color: transparent;
+}
+
+.close_btn svg {
+  font-size: 24px;
+}
+
+/* Modal footer Styling */
+
+.modal footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.separator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #353535;
+}
+
+.separator span:first-child,
+.separator span:last-child {
+  width: 180px;
+  height: 1px;
+  background-color: #b5b5b5;
+}
+
+.google_btn {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #353535;
+}
+
+.google_btn img {
+  width: 24px;
+  height: auto;
+}
+
+.modal footer p {
+  font-size: 14px;
+  color: #353535;
+}
+
+.toggle_btn {
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--secondary-color);
+}

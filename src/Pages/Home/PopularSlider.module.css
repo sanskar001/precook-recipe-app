@@ -1,0 +1,28 @@
+.popular_slider {
+  width: 100%;
+}
+
+.popular_slider h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #353535;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.loading {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.slider_container {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .popular_slider h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+}

@@ -1,0 +1,64 @@
+.banner {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+}
+
+.left h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.left h2 > span {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.left h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0px 10px;
+}
+
+.left p {
+  font-size: 18px;
+  color: #353535;
+  padding-right: 10px;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+
+.right img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .left h2 {
+    font-size: 28px;
+  }
+
+  .left h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+  .left p {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+}

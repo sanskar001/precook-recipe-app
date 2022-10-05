@@ -1,0 +1,18 @@
+.recipe {
+  width: 100%;
+  max-width: 1200px;
+  min-height: calc(100vh - 200px);
+  margin: 10px auto;
+  padding: 0px 10px;
+}
+
+.loading {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.recipe main {
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+}
