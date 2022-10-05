@@ -9,3 +9,5 @@ HTML | CSS | React | Firebase | Material UI | React Context Api | React Router |
 [Visit Website 🚀](https://precook-recipe-app-project.web.app/)
 
 [See design on figma 🎨](https://www.figma.com/file/UsapqUC2qLOPgTMJ4Tvs5W/PreCook-app?node-id=14%3A9)
+
+⚠ [IMPORTANT NOTE] In this project I have used spoonacular API which has limited request calls (free plan) so, if you find an error like "Request failed", please do consider and contact me.
