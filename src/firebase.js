@@ -3,10 +3,11 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
+import { REACT_APP_FIREBASE_API_KEY } from "../src/Helper/config";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  apiKey: REACT_APP_FIREBASE_API_KEY,
   authDomain: "precook-recipe-app-project.firebaseapp.com",
   projectId: "precook-recipe-app-project",
   // storageBucket: "precook-recipe-app-project.appspot.com",

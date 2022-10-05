@@ -1,8 +1,10 @@
+import { REACT_APP_API_KEY } from "../Helper/config";
+
 const getRecipeInformation = async (recipeIdList) => {
   // function to get JSON data of api search request.
   const getJSON = async (id) => {
     const response = await fetch(
-      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${REACT_APP_API_KEY}`
     );
 
     return response.json();

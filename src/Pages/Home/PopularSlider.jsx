@@ -6,6 +6,7 @@ import classes from "./PopularSlider.module.css";
 import BookmarkContext from "../../components/Context/BookmarkContextProvider";
 import useHttp from "../../components/Hooks/use-http";
 import { ClipLoader } from "react-spinners";
+import { REACT_APP_API_KEY } from "../../Helper/config";
 
 const getRecipes = (recipes, bookmarkRecipes) => {
   if (bookmarkRecipes.length > 0 && recipes.length > 0) {
@@ -58,7 +59,7 @@ const PopularSlider = () => {
       setPopularRecipes(localPopularRecipes);
     } else {
       sendRequest(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=6&limitLicense=true`,
+        `https://api.spoonacular.com/recipes/random?apiKey=${REACT_APP_API_KEY}&number=6&limitLicense=true`,
         transformData
       );
     }

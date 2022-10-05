@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Button from "../UI/Button";
 import useInput from "../Hooks/use-input";
 import AuthContext from "../Context/AuthContextProvider";
+import { REACT_APP_MIN_PASSWORD_LENGTH } from "../../Helper/config";
 
 const theme = createTheme({
   typography: {
@@ -22,8 +23,8 @@ const removeExtraSpace = (str) => {
 };
 
 // REGULAR EXPRESSION
-const fullNameRegex = new RegExp(process.env.REACT_APP_FULL_NAME_REGEX);
-const emailRegex = new RegExp(process.env.REACT_APP_EMAIL_REGEX);
+const fullNameRegex = /^[a-zA-Z ]+$/;
+const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 const AuthForm = (props) => {
   const [formisValid, setFormIsValid] = useState(false);
@@ -55,9 +56,7 @@ const AuthForm = (props) => {
     inputChangeHandler: passwordChangeHandler,
     inputBlurHandler: passwordBlurHandler,
     resetInputHandler: resetPasswordHandler,
-  } = useInput(
-    (str) => str.length >= +process.env.REACT_APP_MIN_PASSWORD_LENGTH
-  );
+  } = useInput((str) => str.length >= +REACT_APP_MIN_PASSWORD_LENGTH);
 
   useEffect(() => {
     setFormIsValid(

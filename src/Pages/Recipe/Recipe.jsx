@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import BookmarkContext from "../../components/Context/BookmarkContextProvider";
 import useHttp from "../../components/Hooks/use-http";
+import { REACT_APP_API_KEY } from "../../Helper/config";
 
 const getRecipeInfo = (recipe, bookmarkRecipes) => {
   if (bookmarkRecipes.length > 0 && recipe) {
@@ -36,7 +37,7 @@ const Recipe = () => {
     };
 
     sendRequest(
-      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=true`,
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${REACT_APP_API_KEY}&includeNutrition=true`,
       transformData
     );
   }, [sendRequest, id]);

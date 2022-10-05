@@ -7,6 +7,7 @@ import BookmarkContext from "../../components/Context/BookmarkContextProvider";
 import getRecipeInformation from "../../Helper/recipe-info";
 import useHttp from "../../components/Hooks/use-http";
 import { ClipLoader } from "react-spinners";
+import { REACT_APP_API_KEY } from "../../Helper/config";
 
 const getRecipes = (recipes, bookmarkRecipes) => {
   if (bookmarkRecipes.length > 0 && recipes.length > 0) {
@@ -68,7 +69,7 @@ const SimilarRecipe = (props) => {
       setSimilarRecipes(localSimilarRecipes[`${props.id}`]);
     } else {
       sendRequest(
-        `https://api.spoonacular.com/recipes/${props.id}/similar?apiKey=${process.env.REACT_APP_API_KEY}&number=4`,
+        `https://api.spoonacular.com/recipes/${props.id}/similar?apiKey=${REACT_APP_API_KEY}&number=4`,
         transformData
       );
     }

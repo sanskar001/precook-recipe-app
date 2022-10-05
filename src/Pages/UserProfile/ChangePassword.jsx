@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Button from "../../components/UI/Button";
 import useInput from "../../components/Hooks/use-input";
 import AuthContext from "../../components/Context/AuthContextProvider";
+import { REACT_APP_MIN_PASSWORD_LENGTH } from "../../Helper/config";
 
 const theme = createTheme({
   typography: {
@@ -26,9 +27,7 @@ const ChangePassword = (props) => {
     inputChangeHandler: newPasswordChangeHandler,
     inputBlurHandler: newPasswordBlurHandler,
     resetInputHandler: resetNewPasswordHandler,
-  } = useInput(
-    (str) => str.length >= process.env.REACT_APP_MIN_PASSWORD_LENGTH
-  );
+  } = useInput((str) => str.length >= +REACT_APP_MIN_PASSWORD_LENGTH);
 
   const {
     enteredInput: enteredConfirmNewPassword,
@@ -39,8 +38,7 @@ const ChangePassword = (props) => {
     resetInputHandler: resetConfirmNewPasswordHandler,
   } = useInput((str) => {
     return (
-      str === enteredNewPassword &&
-      str.length >= process.env.REACT_APP_MIN_PASSWORD_LENGTH
+      str === enteredNewPassword && str.length >= +REACT_APP_MIN_PASSWORD_LENGTH
     );
   });
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import RecipeContainer from "../../components/UI/RecipeContainer";
 import { useParams } from "react-router-dom";
 import useHttp from "../../components/Hooks/use-http";
+import { REACT_APP_API_KEY } from "../../Helper/config";
 
 const Cuisine = () => {
   const { type } = useParams();
@@ -40,7 +41,7 @@ const Cuisine = () => {
       setCuisineRecipes(localCuisineRecipes[type]);
     } else {
       sendRequest(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&tag=${type}&number=9&limitLicense=true`,
+        `https://api.spoonacular.com/recipes/random?apiKey=${REACT_APP_API_KEY}&tag=${type}&number=9&limitLicense=true`,
         transformData
       );
     }

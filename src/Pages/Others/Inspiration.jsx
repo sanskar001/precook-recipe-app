@@ -3,6 +3,7 @@ import RecipeContainer from "../../components/UI/RecipeContainer";
 import getRecipeInformation from "../../Helper/recipe-info";
 import { useParams } from "react-router-dom";
 import useHttp from "../../components/Hooks/use-http";
+import { REACT_APP_API_KEY } from "../../Helper/config";
 
 const Inspiration = () => {
   const { foodName } = useParams();
@@ -52,7 +53,7 @@ const Inspiration = () => {
       setInspirationRecipes(localInspirationRecipes[foodName]);
     } else {
       sendRequest(
-        `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${foodName}&number=9`,
+        `https://api.spoonacular.com/recipes/complexSearch?apiKey=${REACT_APP_API_KEY}&query=${foodName}&number=9`,
         transformData
       );
     }
