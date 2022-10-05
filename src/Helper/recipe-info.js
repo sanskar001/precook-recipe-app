@@ -11,7 +11,19 @@ const getRecipeInformation = async (recipeIdList) => {
   };
 
   try {
-    const data = await Promise.all(recipeIdList.map((id) => getJSON(id)));
+    // const data = await Promise.all(recipeIdList.map((id) => getJSON(id)));
+    const result = await Promise.allSettled(
+      recipeIdList.map((id) => getJSON(id))
+    );
+
+    const data = [];
+
+    result.forEach((item) => {
+      if (item.status === "rejected" || item.value?.status === "failure") {
+      } else {
+        data.push(item.value);
+      }
+    });
 
     return data;
   } catch (err) {
